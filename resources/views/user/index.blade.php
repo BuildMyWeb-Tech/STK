@@ -77,10 +77,10 @@
                         <div class="col-md-6 col-xl-6 wow fadeInUp" data-wow-delay="0.1s">
                             <div class="service-item bg-light rounded">
                                 <div class="project-img">
-                                    <img src="{{ asset('storage/' . $rec->event_image) }}"
+                                    <img src="{{ $rec->event_image ? asset('storage/' . $rec->event_image) : asset('assets/user_assets/images/events/events.jpg') }}"
                                         class="img-fluid w-100 rounded-top" alt="Tamil New Year Festival">
                                     <div class="blog-plus-icon">
-                                        <a href="{{ asset('storage/' . $rec->event_image) }}" data-lightbox="blog-4"
+                                        <a href="{{ $rec->event_image ? asset('storage/' . $rec->event_image) : asset('assets/user_assets/images/events/events.jpg') }}" data-lightbox="blog-4"
                                             class="btn btn-primary btn-md-square rounded-pill">
                                             <i class="fa fa-eye fa-1x"></i>
                                         </a>
